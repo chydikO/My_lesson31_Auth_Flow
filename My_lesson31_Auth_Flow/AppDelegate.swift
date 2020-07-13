@@ -6,6 +6,13 @@
 //  Copyright © 2020 OlegChudnovskiy. All rights reserved.
 //
 
+/*
+ 1. launch app
+ 2. if first - show tutorial
+ 3. if is user login - show main controller
+ 4. else - show auth controller
+ */
+
 import UIKit
 
 @UIApplicationMain
