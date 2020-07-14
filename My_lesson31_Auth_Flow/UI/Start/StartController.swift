@@ -33,14 +33,15 @@ class StartController: BaseViewController {
     }
     
     private func openTutorial() {
-        
+        setRootViewControllerFrom(storyboard: "Tutorial")
     }
     
     private func openAuth() {
+        setRootViewControllerFrom(storyboard: "Auth")
         
     }
     
     private func openMain() {
-        
+        setRootViewControllerFrom(storyboard: "Main")
     }
 }

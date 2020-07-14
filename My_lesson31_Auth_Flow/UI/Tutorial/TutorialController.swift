@@ -9,22 +9,32 @@
 import UIKit
 
 class TutorialController: BaseViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        title = "Tutorial"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction private func appStart() {
+        check()
     }
-    */
-
+    
+    private func check() {
+        if AppSettings.shared.isSwosedTutuorial {
+            // open Auth or Maine
+            if AppSettings.shared.isUserLogged {
+                openMain()
+            } else {
+                openAuth()
+            }
+        }
+    }
+    private func openAuth() {
+        setRootViewControllerFrom(storyboard: "Auth")
+    }
+    
+    private func openMain() {
+        setRootViewControllerFrom(storyboard: "Main")
+    }
 }

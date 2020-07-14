@@ -9,22 +9,30 @@
 import UIKit
 
 class MainController: BaseViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        title = "Main"
+        
     }
     
+    @IBAction private func logoutBtnClicked() {
+        //alert
+        let alert = UIAlertController(title: "Do you wont logOut?", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: .destructive, handler:{ [weak self] _ in
+            AppSettings.shared.logoutUser()
+            self?.openStart()
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
     }
-    */
-
+    
+    private func openStart() {
+        //open StartController
+        setRootViewControllerFrom(storyboard: "Start")
+    }
+    
 }

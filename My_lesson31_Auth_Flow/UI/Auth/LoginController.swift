@@ -10,21 +10,24 @@ import UIKit
 
 class LoginController: BaseViewController {
 
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        title = "Login"
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction private func loginBtnClicked() {
+        let user = User(name: "Vasya", email: "vasya99@mail.com", password: "p@ssw0rD", phoneNumber: "123-123-123", photo: nil)
+        
+        AppSettings.shared.loginUser(user)
+        openMain()
     }
-    */
+    
+    private func openMain() {
+        //open StartController
+        setRootViewControllerFrom(storyboard: "Main")
+    }
+
 
 }
