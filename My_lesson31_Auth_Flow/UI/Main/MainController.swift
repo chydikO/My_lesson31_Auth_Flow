@@ -32,7 +32,7 @@ class MainController: BaseViewController {
     
     private func openStart() {
         //open StartController
-        setRootViewControllerFrom(storyboard: "Start")
+        setWindowRootViewControllerFrom(storyboard: "Start")
     }
     
 }

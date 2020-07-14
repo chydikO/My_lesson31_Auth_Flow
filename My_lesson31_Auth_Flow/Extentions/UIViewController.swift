@@ -9,7 +9,8 @@
 import UIKit
 
 extension UIViewController {
-    func setRootViewControllerFrom(storyboard: String) {
+    
+    func setWindowRootViewControllerFrom(storyboard: String) {
         let storyboard = UIStoryboard(name: storyboard, bundle: nil)
         if
             let controller = storyboard.instantiateInitialViewController(),
@@ -17,4 +18,5 @@ extension UIViewController {
         {
             appDelegate.window?.rootViewController = controller
         }
-    }}
+    }
+}

@@ -10,11 +10,10 @@ import UIKit
 
 class StartController: BaseViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    
         check()
-        
     }
     
     // нужно ли показывать окно tutorial
@@ -33,15 +32,15 @@ class StartController: BaseViewController {
     }
     
     private func openTutorial() {
-        setRootViewControllerFrom(storyboard: "Tutorial")
+        setWindowRootViewControllerFrom(storyboard: "Tutorial")
     }
     
     private func openAuth() {
-        setRootViewControllerFrom(storyboard: "Auth")
+        setWindowRootViewControllerFrom(storyboard: "Auth")
         
     }
     
     private func openMain() {
-        setRootViewControllerFrom(storyboard: "Main")
+        setWindowRootViewControllerFrom(storyboard: "Main")
     }
 }

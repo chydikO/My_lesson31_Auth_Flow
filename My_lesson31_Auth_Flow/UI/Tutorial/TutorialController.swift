@@ -21,20 +21,18 @@ class TutorialController: BaseViewController {
     }
     
     private func check() {
-        if AppSettings.shared.isSwosedTutuorial {
-            // open Auth or Maine
-            if AppSettings.shared.isUserLogged {
-                openMain()
-            } else {
-                openAuth()
-            }
+        // open Auth or Maine
+        if AppSettings.shared.isUserLogged {
+            openMain()
+        } else {
+            openAuth()
         }
     }
     private func openAuth() {
-        setRootViewControllerFrom(storyboard: "Auth")
+        setWindowRootViewControllerFrom(storyboard: "Auth")
     }
     
     private func openMain() {
-        setRootViewControllerFrom(storyboard: "Main")
+        setWindowRootViewControllerFrom(storyboard: "Main")
     }
 }

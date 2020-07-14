@@ -26,7 +26,7 @@ class LoginController: BaseViewController {
     
     private func openMain() {
         //open StartController
-        setRootViewControllerFrom(storyboard: "Main")
+        setWindowRootViewControllerFrom(storyboard: "Main")
     }
 
 
