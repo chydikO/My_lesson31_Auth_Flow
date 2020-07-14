@@ -10,15 +10,15 @@ import UIKit
 
 class StartController: BaseViewController {
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     
         check()
     }
     
     // нужно ли показывать окно tutorial
     private func check() {
-        if AppSettings.shared.isSwosedTutuorial {
+        if AppSettings.shared.isSwowedTutuorial {
             // open Auth or Maine
             if AppSettings.shared.isUserLogged {
                 openMain()

@@ -15,7 +15,7 @@
 		684BE4FC24BCD0550090D0A4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE4FB24BCD0550090D0A4 /* BaseViewController.swift */; };
 		684BE4FE24BCD2C20090D0A4 /* TutorialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE4FD24BCD2C20090D0A4 /* TutorialController.swift */; };
 		684BE50124BCD2EB0090D0A4 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE4FF24BCD2EB0090D0A4 /* StartController.swift */; };
-		684BE50424BCD4890090D0A4 /* StartController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684BE50324BCD4890090D0A4 /* StartController.storyboard */; };
+		684BE50424BCD4890090D0A4 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684BE50324BCD4890090D0A4 /* Start.storyboard */; };
 		684BE50824BD98F90090D0A4 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE50724BD98F90090D0A4 /* LoginController.swift */; };
 		684BE50A24BD990B0090D0A4 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE50924BD990B0090D0A4 /* RegistrationController.swift */; };
 		684BE50C24BD99380090D0A4 /* RestorePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684BE50B24BD99380090D0A4 /* RestorePasswordController.swift */; };
@@ -40,7 +40,7 @@
 		684BE4FB24BCD0550090D0A4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		684BE4FD24BCD2C20090D0A4 /* TutorialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialController.swift; sourceTree = "<group>"; };
 		684BE4FF24BCD2EB0090D0A4 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
-		684BE50324BCD4890090D0A4 /* StartController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartController.storyboard; sourceTree = "<group>"; };
+		684BE50324BCD4890090D0A4 /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
 		684BE50724BD98F90090D0A4 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		684BE50924BD990B0090D0A4 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		684BE50B24BD99380090D0A4 /* RestorePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordController.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				684BE4FF24BCD2EB0090D0A4 /* StartController.swift */,
-				684BE50324BCD4890090D0A4 /* StartController.storyboard */,
+				684BE50324BCD4890090D0A4 /* Start.storyboard */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -244,7 +244,7 @@
 				684BE4EB24BCC75A0090D0A4 /* Assets.xcassets in Resources */,
 				684BE50E24BD995B0090D0A4 /* Auth.storyboard in Resources */,
 				684BE51124BD9B550090D0A4 /* Main.storyboard in Resources */,
-				684BE50424BCD4890090D0A4 /* StartController.storyboard in Resources */,
+				684BE50424BCD4890090D0A4 /* Start.storyboard in Resources */,
 				684BE4E924BCC7530090D0A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

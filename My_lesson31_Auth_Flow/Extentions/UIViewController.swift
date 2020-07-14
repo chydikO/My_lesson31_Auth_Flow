@@ -17,6 +17,7 @@ extension UIViewController {
             let appDelegate = UIApplication.shared.delegate as? AppDelegate
         {
             appDelegate.window?.rootViewController = controller
+            print(self.className)
         }
     }
 }

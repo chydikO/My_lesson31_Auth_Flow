@@ -21,7 +21,7 @@ class AppSettings {
     
     
     //показывать tutorial
-    var isSwosedTutuorial: Bool {
+    var isSwowedTutuorial: Bool {
         set {
             userDefaults.set(newValue, forKey: Key.isSwosedTutuorialKey)
         }

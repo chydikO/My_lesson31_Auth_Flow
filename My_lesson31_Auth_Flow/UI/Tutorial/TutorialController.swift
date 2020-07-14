@@ -21,6 +21,7 @@ class TutorialController: BaseViewController {
     }
     
     private func check() {
+        AppSettings.shared.isSwowedTutuorial = true
         // open Auth or Maine
         if AppSettings.shared.isUserLogged {
             openMain()
