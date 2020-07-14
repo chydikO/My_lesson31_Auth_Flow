@@ -9,22 +9,38 @@
 import UIKit
 
 class StartController: BaseViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        check()
+        
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // нужно ли показывать окно tutorial
+    private func check() {
+        if AppSettings.shared.isSwosedTutuorial {
+            // open Auth or Maine
+            if AppSettings.shared.isUserLogged {
+                openMain()
+            } else {
+                openAuth()
+            }
+        } else  {
+            // open tutorial
+            openTutorial()
+        }
     }
-    */
-
+    
+    private func openTutorial() {
+        
+    }
+    
+    private func openAuth() {
+        
+    }
+    
+    private func openMain() {
+        
+    }
 }

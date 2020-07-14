@@ -7,6 +7,7 @@
 //
 
 /*
+ Cmd+Alt+N - New Group
  1. launch app
  2. if first - show tutorial
  3. if is user login - show main controller
